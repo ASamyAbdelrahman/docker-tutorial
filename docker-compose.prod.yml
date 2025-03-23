@@ -1,0 +1,8 @@
+version: '3'
+services:
+  express-app:
+    environment:
+      - NODE_ENV=production
+    build:
+      context: .
+      target: production

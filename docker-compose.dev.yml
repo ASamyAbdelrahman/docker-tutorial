@@ -1,0 +1,10 @@
+version: '3'
+services:
+  express-app:
+    volumes:
+      - ./src:/app/src:ro
+    environment:
+      - NODE_ENV=development
+    build:
+      context: .
+      target: development
