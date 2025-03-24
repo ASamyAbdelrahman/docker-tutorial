@@ -33,13 +33,13 @@ mongoose
 app.get("/", (req, res) => {
     redisClient.set('products', 'products...');
     
-    res.send("<h1> Hello<h1/>");
+    res.send("<h1> Hello Samy<h1/>");
 });
 
 app.get("/data", async(req, res) => {
     const products = await redisClient.get('products');
 
-    res.send(`<h1> Hello Samy<h1/> <h2>${products}<h2/>`);
+    res.send(`<h1> These are The products<h1/> <h2>${products}<h2/>`);
 });
 
 

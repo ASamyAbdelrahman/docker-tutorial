@@ -2,6 +2,7 @@ version: '3'
 services:
   express-app:
     container_name: express-node-app-container
+    image: samy17/docker-tutorial
     build: .
     ports:
       - "4000:4000"
