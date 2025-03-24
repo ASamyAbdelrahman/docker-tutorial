@@ -6,7 +6,7 @@ COPY package.json .
 RUN npm install --only=production
 COPY . .
 EXPOSE 4000
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "start" ]
 
 FROM base as development
 WORKDIR /app
